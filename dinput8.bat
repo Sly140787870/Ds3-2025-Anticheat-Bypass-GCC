@@ -1,0 +1,3 @@
+@gcc.exe -o dinput8.dll dinput8.cpp Console.cpp Mem.cpp NtTest.cpp Funcs.cpp UEF.cpp VEH.cpp BanBypass.cpp P2P.cpp WPHook.cpp dinput8.s dinput8.def -O3 -DSTRSAFE_NO_DEPRECATE  -mcmodel=small -Wno-multichar -lmsvcrt -lntdll -lkernel32 -luser32 -ladvapi32 -shared --freestanding -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -nostartfiles -nostdlib -Wl,--image-base,0x111000000,-e,DllMain,--allow-multiple-definition,--gc-sections,--relax,-s,--exclude-all-symbols
+
+@pause
